@@ -5,5 +5,5 @@ package com.tembem.loginandregistration;
  */
 
 public class AppConfig {
-    public static String URL_LOGIN = "http://192.168.33.10/android_api/login.php";
+    public static String URL_LOGIN = "http://indosanjaya.com/android_api/login.php";
 }
