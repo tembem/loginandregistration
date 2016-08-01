@@ -128,7 +128,7 @@ public class LoginActivity extends Activity {
 
                         JSONObject user = jObj.getJSONObject("user");
                         String name = user.getString("name");
-                        String email = user.getString("email");
+                        String email = user.getString("username");
                         String created_at = user
                                 .getString("created_at");
 
@@ -168,7 +168,7 @@ public class LoginActivity extends Activity {
             protected Map<String, String> getParams() {
                 // Posting parameters to login url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("email", email);
+                params.put("username", email);
                 params.put("password", password);
 
                 return params;
